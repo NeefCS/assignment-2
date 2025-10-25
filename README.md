@@ -26,7 +26,6 @@ assignment-2/
 ├── docs/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
-└── .gitignore
 
 ## 🤖 AI Assistance Summary
 I used ChatGPT to generate
