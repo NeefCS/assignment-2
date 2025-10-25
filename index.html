@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naif Portfolio | Assignment 2</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Naif Portfolio</h1>
+    <p id="greeting"></p>
+    <button id="toggleModeBtn">Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm <strong>Naif</strong>, a Computer Science student passionate about 
+        web development and AI. I enjoy building creative digital solutions and exploring 
+        how technology can make everyday tasks easier and smarter.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <input type="text" id="searchInput" placeholder="Search projects..." />
+      <p id="noResults" class="hidden">No matching projects found.</p>
+
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card fade-in">
+          <img src="assets/images/project1-placeholder.jpeg" alt="AI Project" />
+          <div class="project-info">
+            <h3>Data Science & AI Project</h3>
+            <p>
+              Cleaned and prepared datasets, explored insights with data analysis, 
+              and applied basic AI models to demonstrate predictive power. 🚀
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <img src="assets/images/project2-placeholder.jpeg" alt="University Bus App" />
+          <div class="project-info">
+            <h3>University Bus App</h3>
+            <p>
+              Designed a mobile app concept for tracking campus bus routes and schedules, 
+              improving transportation efficiency for students. 🚌
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Naif Portfolio | Assignment 2</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

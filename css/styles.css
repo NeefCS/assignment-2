@@ -1,0 +1,179 @@
+:root {
+    --bg-light: #f9f9f9;
+    --text-light: #222;
+    --bg-dark: #111;
+    --text-dark: #fff;
+    --accent: #007bff;
+    --header-bg: #007bff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  body.dark {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  header {
+    background-color: var(--header-bg);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #toggleModeBtn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+  }
+  #toggleModeBtn:hover {
+    box-shadow: 0 0 10px var(--accent);
+  }
+  
+  /* ===== About Section ===== */
+  #about {
+    text-align: center;
+    padding: 50px 15%;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  /* ===== Projects ===== */
+  #projects {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  #searchInput {
+    width: 60%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .projects-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 340px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  body.dark .project-card {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 20px;
+  }
+  
+  .project-info h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project-info p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  body.dark .project-info p {
+    color: #ccc;
+  }
+  
+  /* ===== Contact Section ===== */
+  #contact {
+    text-align: center;
+    margin: 60px auto;
+    width: 60%;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #contact button {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #contact button:hover {
+    box-shadow: 0 0 10px var(--accent);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    margin-top: 40px;
+  }
+  
+  /* ===== Animations ===== */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
